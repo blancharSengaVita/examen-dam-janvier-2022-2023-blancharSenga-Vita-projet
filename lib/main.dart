@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       child: Row(
         children: [
           const SizedBox(
-            width: kDefaultWidth,
+            width: kMargin / 2,
           ),
           ClipRRect(
               borderRadius: BorderRadius.circular(50.0),
@@ -29,17 +29,34 @@ class MyApp extends StatelessWidget {
           ),
           Expanded(
               child: Container(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: kMargin / 2,
+            height: 50,
+            padding: const EdgeInsets.symmetric(
+              horizontal: kMargin / 2,
+            ),
+            decoration: BoxDecoration(
+              borderRadius: const BorderRadius.all(
+                Radius.circular(25),
+              ),
+              border: Border.all(
+                width: 2,
+                color: Colors.black,
+              ),
+            ),
+            child: Row(
+              children: const  [
+                Text(
+                  "Rechercher une note",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 17.0,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.grey,
+                    decoration: TextDecoration.none,
                   ),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(10),
-                    ),
-                    border: Border.all(
-                      width: 2,
-                    ),
-                  )))
+                ),
+              ],
+            ),
+          ))
         ],
       ),
     )));
