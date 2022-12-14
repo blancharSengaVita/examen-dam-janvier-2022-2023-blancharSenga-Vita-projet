@@ -19,10 +19,20 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return  Scaffold(
         body: Padding(
-          padding: const EdgeInsets.only(top: kDefaultWidth, bottom: kDefaultWidth),
+          padding: const EdgeInsets.symmetric(vertical: kDefaultWidth, horizontal: kDefaultWidth/2),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
               NavBar(),
+              SizedBox(
+                height: 22,
+              ),
+              Text('Toutes les notes', style: kTitleStyle),
+              SizedBox(
+                height: 15,
+              ),
+              StreamBuilder<querySnapshot>(builder:builder)
               // AddNoteButton(),
             ],
           ),

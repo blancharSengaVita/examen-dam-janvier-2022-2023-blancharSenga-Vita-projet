@@ -12,9 +12,6 @@ class NavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: const [
-        SizedBox(
-          width: kMargin,
-        ),
         Avatar(),
         SizedBox(
           width: 11,
@@ -24,9 +21,6 @@ class NavBar extends StatelessWidget {
           width: 11,
         ),
         Menu(),
-        SizedBox(
-          width: kMargin,
-        )
       ],
     );
   }
