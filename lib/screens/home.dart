@@ -18,7 +18,7 @@ class Home extends StatelessWidget {
           child: Column(
             children: const [
               NavBar(),
-              AddNoteButton(),
+              // AddNoteButton(),
             ],
           ),
 
