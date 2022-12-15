@@ -3,6 +3,7 @@ import 'package:exame/partials/note_grid.dart';
 import 'package:exame/partials/title.dart';
 import 'package:flutter/material.dart';
 import '../styles/constants.dart';
+import 'note_editor.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -24,7 +25,13 @@ class Home extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => const NoteEditor(),
+              ),
+            );
+          },
           icon : const Icon(
             Icons.add,
             color: Colors.white,

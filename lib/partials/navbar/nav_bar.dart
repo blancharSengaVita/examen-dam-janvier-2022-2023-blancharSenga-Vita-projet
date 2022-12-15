@@ -20,9 +20,6 @@ class NavBar extends StatelessWidget {
           width: 11,
         ),
         SearchInput(),
-        SizedBox(
-          width: 11,
-        ),
         Menu(),
         SizedBox(
           width: kMargin,
