@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
+
 class Note {
   final String content;
   final String title;
 
-  const Note({required this.title, required this.content});
+   Note({required this.title, required this.content});
 }
 
 List<Note> datasNotes = [

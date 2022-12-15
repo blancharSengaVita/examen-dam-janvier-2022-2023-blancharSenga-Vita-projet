@@ -24,23 +24,28 @@ class Home extends StatelessWidget {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton.extended(
+      floatingActionButton: Container(
+        margin: const EdgeInsets.only(bottom: 40, left: 20),
+        child: MaterialButton(
           onPressed: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (context) => const NoteEditor(),
-              ),
-            );
-          },
-          icon : const Icon(
-            Icons.add,
-            color: Colors.white,
-            size: 50,
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const NoteEditor(),
+                ),
+              );
+            },
+          color: Colors.black,
+          shape: const CircleBorder(),
+          child: const Padding(
+            padding: EdgeInsets.all(10),
+            child: Icon(
+              Icons.add,
+              color: Colors.white,
+              size: 50,
+            ),
           ),
-          label: const Text("Add Note"),
-        backgroundColor: Colors.black,
-        // shape: const CircleBorder(),
-      ),
+        ),
+      )
     );
   }
 }
