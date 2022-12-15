@@ -21,15 +21,22 @@ const kTitleStyle = TextStyle(
     decoration: TextDecoration.none
 );
 
-const kNoteTitleStyle = TextStyle(
+const kCardNoteTitleStyle = TextStyle(
     fontSize: 18,
     color : kMainTextColor,
     fontWeight: FontWeight.bold,
     decoration: TextDecoration.none
 );
 
-const kMainTextStyle = TextStyle(
+const kCardNoteContentTextStyle = TextStyle(
     fontSize: 16,
+    color : kMainTextColor,
+    fontWeight: FontWeight.normal,
+    decoration: TextDecoration.none
+);
+
+const kMainTextStyle = TextStyle(
+    fontSize: 18,
     color : kMainTextColor,
     fontWeight: FontWeight.normal,
     decoration: TextDecoration.none

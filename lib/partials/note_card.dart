@@ -19,22 +19,6 @@ class NoteCard extends StatelessWidget {
             style: BorderStyle.solid,
             width: 2,
           )),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            title,
-            style: kNoteTitleStyle,
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          Text(
-              content,
-              style: kMainTextStyle
-          )
-        ],
-      ),
     );
   }
 }
