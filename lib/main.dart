@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        initialRoute: kHomeRoute,
+        initialRoute: kNoteRoute,
         routes: router,
       theme: ThemeData(
         fontFamily: 'SF Pro', backgroundColor: kMainBackgroundColor

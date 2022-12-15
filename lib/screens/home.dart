@@ -1,5 +1,6 @@
 import 'package:exame/partials/navbar/nav_bar.dart';
 import 'package:exame/partials/note_grid.dart';
+import 'package:exame/partials/title.dart';
 import 'package:flutter/material.dart';
 import '../styles/constants.dart';
 
@@ -9,29 +10,30 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Padding(
-      padding: const EdgeInsets.only(top: kMargin * 3, bottom: kMargin),
-      child: Column(
-        children: [
-          const NavBar(),
-          const SizedBox(
-            height: 25,
-          ),
-          Row(
-            children: const [
-              SizedBox(
-                width: 20,
-              ),
-              Text(
-                "Toutes les notes",
-                style: kTitleStyle,
-                textAlign: TextAlign.left,
-              ),
-            ],
-          ),
-          const NoteGrid(),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.only(top: kMargin * 3, bottom: kMargin),
+        child: Column(
+          children: const [
+            NavBar(),
+            SizedBox(
+              height: 25,
+            ),
+            TitleTitle(),
+            NoteGrid(),
+          ],
+        ),
       ),
-    ));
+      floatingActionButton: FloatingActionButton.extended(
+          onPressed: () {},
+          icon : const Icon(
+            Icons.add,
+            color: Colors.white,
+            size: 50,
+          ),
+          label: const Text("Add Note"),
+        backgroundColor: Colors.black,
+        // shape: const CircleBorder(),
+      ),
+    );
   }
 }

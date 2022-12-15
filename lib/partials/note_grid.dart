@@ -23,10 +23,10 @@ class _NoteGridState extends State<NoteGrid> {
           vertical: kMargin / 1.33, horizontal: kMargin),
       shrinkWrap: true,
       children: const [
-        NoteCard(),
-        NoteCard(),
-        NoteCard(),
-        NoteCard(),
+        NoteCard(title: "ça va bien ?", content: "oui",),
+        NoteCard(title: "ça va bien ?", content: "oui",),
+        NoteCard(title: "ça va bien ?", content: "oui",),
+        NoteCard(title: "ça va bien ?", content: "oui",),
       ],
     );
   }
