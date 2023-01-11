@@ -14,7 +14,7 @@ class NoteEditor extends StatefulWidget {
 class _NoteEditorState extends State<NoteEditor> {
   final TextEditingController titleController = TextEditingController();
   final TextEditingController mainController = TextEditingController();
-  late final Note note = Note(title: titleController.text, content: mainController.text);
+
 
   @override
   Widget build(BuildContext context) {
@@ -36,8 +36,10 @@ class _NoteEditorState extends State<NoteEditor> {
                             builder: (context) => const Home(),
                           ),
                         );
-                        //dire qu'il faut enregistrer la note ico
-                        datasNotes.add(note);
+
+                        datasNotes.add(Note(title:titleController.text, content: mainController.text));
+                        print(datasNotes);
+                        //dire qu'il faut enregistrer la note
                       },
                       child: const Icon(Icons.arrow_back_ios, size: 30)),
                   Container()
