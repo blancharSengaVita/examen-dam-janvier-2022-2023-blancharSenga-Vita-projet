@@ -41,3 +41,10 @@ const kMainTextStyle = TextStyle(
     fontWeight: FontWeight.normal,
     decoration: TextDecoration.none
 );
+
+const kFormSubTextStyle = TextStyle(
+    fontSize: 12,
+    color : kMainTextColor,
+    fontWeight: FontWeight.normal,
+    decoration: TextDecoration.underline
+);

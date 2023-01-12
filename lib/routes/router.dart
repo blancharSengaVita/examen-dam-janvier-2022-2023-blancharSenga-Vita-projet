@@ -8,5 +8,5 @@ import '../screens/note_editor.dart';
 Map<String, WidgetBuilder> router = {
   kHomeRoute: (context) =>  const Home(),
   kNoteRoute: (context) =>  const NoteEditor(),
-  kLoginRoute: (context) => const LoginForm(),
+  kLoginRoute: (context) => LoginForm(),
 };
