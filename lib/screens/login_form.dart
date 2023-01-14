@@ -1,15 +1,18 @@
+import 'package:exame/partials/buttons/form_button.dart';
 import 'package:exame/partials/form/form_header.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import '../partials/form/email_input.dart';
 import '../partials/form/password_input.dart';
 import '../partials/links.link.dart';
+import '../routes/router.dart';
 import '../routes/routes.dart';
 import '../styles/constants.dart';
 
 class LoginForm extends StatelessWidget {
   LoginForm({Key? key}) : super(key: key);
   final _loginFormKey = GlobalKey<FormState>();
-  String _email = "daniel.schreurs@hotmail.com";
+  String _email = "blanchar@gmail.com";
   String _password = "1234567890";
 
   @override
@@ -18,7 +21,7 @@ class LoginForm extends StatelessWidget {
         body: SafeArea(
             child: Form(
               key: _loginFormKey,
-      child: Padding(
+      child:  Padding(
         padding: const EdgeInsets.symmetric(
           horizontal: 20,
           vertical: 0,
@@ -32,7 +35,7 @@ class LoginForm extends StatelessWidget {
             ),
             Container(
               margin:  const EdgeInsets.only(
-                  top: kMargin, bottom: kMargin),
+                  top: kMargin * 2.5, bottom: kMargin),
               padding:  const EdgeInsets.symmetric(
                 vertical: kMargin,
                 horizontal: kMargin,
@@ -67,6 +70,13 @@ class LoginForm extends StatelessWidget {
                       ),
                     ],
                   ),
+                  const SizedBox(
+                    height: 40,
+                  ),
+                  Button(label : 'Se connecter', onPressed: () {
+                    goHome(formKey: _loginFormKey, context: context);
+                  }
+                  )
                 ],
               ),
             ),

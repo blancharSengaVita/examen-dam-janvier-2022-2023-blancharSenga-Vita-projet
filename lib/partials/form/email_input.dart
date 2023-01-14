@@ -15,7 +15,7 @@ class EmailInput extends StatelessWidget {
       children: [
         Row(
           children: const [
-            Text('Votre username',
+            Text('Votre adresse mail',
                 style: kMainTextStyle,
                 textAlign: TextAlign.start),
           ],

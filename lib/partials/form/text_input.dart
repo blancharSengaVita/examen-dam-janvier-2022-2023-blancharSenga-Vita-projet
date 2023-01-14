@@ -54,6 +54,7 @@ class TextInput extends StatelessWidget {
           borderSide: const BorderSide(color: Colors.black, width: 2),
           borderRadius: BorderRadius.circular(8),
         ),
+
       )
     );
   }

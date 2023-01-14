@@ -19,11 +19,11 @@ class PasswordInput extends StatelessWidget {
                 textAlign: TextAlign.start),
           ],
         ),
-        SizedBox(height: 6),
+        const SizedBox(height: 6),
         TextInput(
           value: "",
           labelText: '',
-          hintText: 'motdepasse',
+          hintText: '',
           keyboardType: TextInputType.visiblePassword,
           validator: (value) {
             if (value == null || value.isEmpty) {
