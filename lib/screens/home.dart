@@ -26,41 +26,38 @@ class _HomeState extends State<Home> {
             child: SidebarScreen(),
           ),
         ),
-      body: Padding(
-        padding: const EdgeInsets.only(top: kMargin * 3, bottom: kMargin),
-        child: Column(
-          children: const [
-            NavBar(),
-            SizedBox(
-              height: 25,
-            ),
-            TitleTitle(),
-            NoteList(),
-          ],
-        ),
-      ),
-      floatingActionButton: Container(
-        margin: const EdgeInsets.only(bottom: 40, left: 20),
-        child: MaterialButton(
-          onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const NoteEditor(),
-                ),
-              );
-            },
-          color: Colors.black,
-          shape: const CircleBorder(),
-          child: const Padding(
-            padding: EdgeInsets.all(10),
-            child: Icon(
-              Icons.add,
-              color: Colors.white,
-              size: 50,
-            ),
+        body: Padding(
+          padding: const EdgeInsets.only(top: kMargin * 3, bottom: kMargin),
+          child: Column(
+            children: const [
+              NavBar(),
+              SizedBox(
+                height: 25,
+              ),
+              TitleTitle(),
+              NoteList(),
+            ],
           ),
         ),
-      )
+        floatingActionButton: Container(
+          margin: const EdgeInsets.only(bottom: 40, left: 20),
+          child: MaterialButton(
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => NoteEditor()));
+            },
+            color: Colors.black,
+            shape: const CircleBorder(),
+            child: const Padding(
+              padding: EdgeInsets.all(10),
+              child: Icon(
+                Icons.add,
+                color: Colors.white,
+                size: 50,
+              ),
+            ),
+          ),
+        )
     );
   }
 }

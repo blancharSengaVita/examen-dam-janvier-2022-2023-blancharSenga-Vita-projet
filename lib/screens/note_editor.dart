@@ -1,13 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:exame/styles/constants.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../note_item.dart';
 import 'home.dart';
 
 class NoteEditor extends StatefulWidget {
-   NoteEditor(this.doc, {Key? key}) : super(key: key);
-  QueryDocumentSnapshot doc;
+   NoteEditor( {Key? key}) : super(key: key);
 
   @override
   State<NoteEditor> createState() => _NoteEditorState();
@@ -16,7 +16,7 @@ class NoteEditor extends StatefulWidget {
 class _NoteEditorState extends State<NoteEditor> {
   final TextEditingController titleController = TextEditingController();
   final TextEditingController mainController = TextEditingController();
-
+  String date = DateTime.now().toString();
 
   @override
   Widget build(BuildContext context) {
@@ -32,19 +32,20 @@ class _NoteEditorState extends State<NoteEditor> {
               child: Row(
                 children: [
                   GestureDetector(
-                      onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (context) => const Home(),
-                          ),
-                        );
-
-                        datasNotes.add(Note(title:titleController.text, content: mainController.text));
-                        print(datasNotes);
-                        //dire qu'il faut enregistrer la note
-                      },
-                      child: const Icon(Icons.arrow_back_ios, size: 30)),
-                  Container()
+                    onTap: () async {
+                      FirebaseFirestore.instance.collection('notes').add({
+                        'title': titleController.text,
+                        'content' : mainController.text,
+                        'date' : date,
+                      }).then((value){
+                        if (kDebugMode) {
+                          print(value.id);
+                          Navigator.pop(context);
+                        }
+                      }).catchError((error) => print('Failed to add new Note due to $error'));
+                    },
+                      child: const Icon(Icons.arrow_back_ios, size: 30)
+                  ),
                 ],
               ),
             ),
