@@ -9,10 +9,10 @@ import 'package:flutter/material.dart';
 
 import 'note_item.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
-  // datasNotes.add(Note(title: "je vais farie un test", content:"Bonne chance"));
-  // print("titre : ${datasNotes[4].title} / content : ${datasNotes[4].content}");
 }
 
 class MyApp extends StatelessWidget {

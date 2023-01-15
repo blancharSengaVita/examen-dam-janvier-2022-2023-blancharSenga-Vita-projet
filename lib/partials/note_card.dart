@@ -4,12 +4,7 @@ import 'package:flutter/material.dart';
 import '../screens/note_editor.dart';
 import '../styles/constants.dart';
 
-class NoteCard extends StatelessWidget {
-  const NoteCard({required this.note, Key? key})
-      : super(key: key);
-  final Note note;
 
-  @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
@@ -31,10 +26,7 @@ class NoteCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              note.title,
-              style: kCardNoteTitleStyle,
-            ),
+            Text(doc["note_title"], ),
             const SizedBox(
               height: 10,
             ),
@@ -47,4 +39,4 @@ class NoteCard extends StatelessWidget {
       ),
     );
   }
-}
+
