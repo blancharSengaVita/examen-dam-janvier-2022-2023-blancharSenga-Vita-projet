@@ -1,10 +1,12 @@
 import 'package:exame/partials/buttons/form_button.dart';
 import 'package:exame/partials/form/form_header.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import '../partials/form/email_input.dart';
 import '../partials/form/password_input.dart';
 import '../partials/links.link.dart';
+import '../partials/model/error_firebase_auth.dart';
 import '../routes/router.dart';
 import '../routes/routes.dart';
 import '../styles/constants.dart';
@@ -73,8 +75,32 @@ class LoginForm extends StatelessWidget {
                   const SizedBox(
                     height: 40,
                   ),
-                  Button(label : 'Se connecter', onPressed: () {
-                    goHome(formKey: _loginFormKey, context: context);
+                  Button(label : 'Se connecter', onPressed: () async {
+                    if (_loginFormKey.currentState != null &&
+                        _loginFormKey.currentState!.validate()) {
+                      try {
+                        await FirebaseAuth.instance
+                            .signInWithEmailAndPassword(
+                            email: _email, password: _password)
+                            .then((value) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                                content: Text(
+                                    'Bonjour ${FirebaseAuth.instance.currentUser!.email}')),
+                          );
+                          Navigator.pushNamed(context, kHomeRoute);
+                        });
+                      } on FirebaseAuthException catch (e) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                              content: Text(
+                                errors[e.code]!,
+                                style: const TextStyle(color: Colors.white),
+                              ),
+                              backgroundColor: Colors.redAccent),
+                        );
+                      }
+                    }
                   }
                   )
                 ],

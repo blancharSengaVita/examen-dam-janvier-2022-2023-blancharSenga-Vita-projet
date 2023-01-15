@@ -23,7 +23,7 @@ class FormHeader extends StatelessWidget {
           style: kBigTitleStyle,
         ),
         const Text(
-          'Ne laisser pas vos idées s’échapper.' ,
+          'Ne laissez pas vos idées s’échapper.' ,
           style: kMainTextStyle,
         ),
       ],

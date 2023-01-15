@@ -2,15 +2,29 @@ import 'package:exame/partials/navbar/nav_bar.dart';
 import 'package:exame/partials/note_grid.dart';
 import 'package:exame/partials/title.dart';
 import 'package:flutter/material.dart';
+import '../partials/sidebar/sidebar.dart';
 import '../styles/constants.dart';
 import 'note_editor.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
   @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
+        drawer: Theme(
+          data: Theme.of(context).copyWith(
+            canvasColor: Colors.transparent,
+          ),
+          child: const Drawer(
+            child: SidebarScreen(),
+          ),
+        ),
       body: Padding(
         padding: const EdgeInsets.only(top: kMargin * 3, bottom: kMargin),
         child: Column(

@@ -15,7 +15,11 @@ class NavBar extends StatelessWidget {
         SizedBox(
           width: kMargin,
         ),
-        Avatar(),
+        Icon(
+          Icons.account_circle,
+          color: Colors.black,
+          size: 38.0,
+        ),
         SizedBox(
           width: 11,
         ),

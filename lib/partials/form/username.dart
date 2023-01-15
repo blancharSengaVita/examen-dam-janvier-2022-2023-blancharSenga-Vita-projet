@@ -21,7 +21,7 @@ class UserNameInput extends StatelessWidget {
         const SizedBox(height: 6),
         TextInput(
           labelText: '',
-          hintText: 'unique.name',
+          hintText: 'example',
           keyboardType: TextInputType.text,
           validator: (value) {
             if (value == null || value.isEmpty) {
