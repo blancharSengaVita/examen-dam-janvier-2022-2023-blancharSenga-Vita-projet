@@ -24,11 +24,8 @@ class _NoteGridState extends State<NoteGrid> {
         padding: const EdgeInsets.symmetric(
             vertical: kMargin / 1.33, horizontal: kMargin),
         shrinkWrap: true,
-        children:  [
-          NoteCard(note : datasNotes[0]),
-          NoteCard(note : datasNotes[1]),
-          NoteCard(note : datasNotes[2]),
-          NoteCard(note : datasNotes[3]),
+        children:  const [
+
         ],
       ),
     );

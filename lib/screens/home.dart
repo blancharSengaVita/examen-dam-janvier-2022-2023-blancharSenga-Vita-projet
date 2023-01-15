@@ -35,7 +35,6 @@ class _HomeState extends State<Home> {
               height: 25,
             ),
             TitleTitle(),
-            NoteGrid(),
             NoteList(),
           ],
         ),

@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:exame/styles/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -5,7 +6,8 @@ import '../note_item.dart';
 import 'home.dart';
 
 class NoteEditor extends StatefulWidget {
-  const NoteEditor({Key? key}) : super(key: key);
+   NoteEditor(this.doc, {Key? key}) : super(key: key);
+  QueryDocumentSnapshot doc;
 
   @override
   State<NoteEditor> createState() => _NoteEditorState();

@@ -10,7 +10,7 @@ import '../screens/reset_password_form.dart';
 
 Map<String, WidgetBuilder> router = {
   kHomeRoute: (context) =>  const Home(),
-  kNoteRoute: (context) =>  const NoteEditor(),
+  kNoteRoute: (context) =>  NoteEditor(),
   kLoginRoute: (context) => LoginForm(),
   kRegisterRoute: (context) => const RegisterForm(),
   kResetPasswordRoute:(context) => const ResetPassword()
