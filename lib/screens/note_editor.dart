@@ -4,10 +4,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../note_item.dart';
+import '../partials/form/note_form/text_note_input.dart';
 import 'home.dart';
 
 class NoteEditor extends StatefulWidget {
-  NoteEditor({Key? key}) : super(key: key);
+  const NoteEditor({Key? key}) : super(key: key);
 
   @override
   State<NoteEditor> createState() => _NoteEditorState();
@@ -35,13 +36,11 @@ class _NoteEditorState extends State<NoteEditor> {
                       onTap: () async {
                         if (titleController.text == '' &&
                             mainController.text == '') {
-
                           Navigator.push(
                               context,
                               MaterialPageRoute(
                                 builder: (context) => const Home(),
                               ));
-
                         } else {
                           FirebaseFirestore.instance.collection('notes').add({
                             'title': titleController.text,
@@ -60,26 +59,17 @@ class _NoteEditorState extends State<NoteEditor> {
                 ],
               ),
             ),
-            TextFormField(
-                keyboardType: TextInputType.multiline,
-                maxLines: null,
-                controller: titleController,
-                decoration: const InputDecoration(
-                  hintText: "Title",
-                  border: InputBorder.none,
-                ),
-                style: kBigTitleStyle),
+            TextNoteInput(
+              hintText: 'Title',
+              controller: titleController,
+              style: kBigTitleStyle,
+            ),
             const SizedBox(
               height: 10,
             ),
-            TextFormField(
-              keyboardType: TextInputType.multiline,
-              maxLines: null,
+            TextNoteInput(
+              hintText: 'note',
               controller: mainController,
-              decoration: const InputDecoration(
-                hintText: "Note",
-                border: InputBorder.none,
-              ),
               style: kMainTextStyle,
             ),
           ],

@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:exame/partials/note_card.dart';
+import 'package:exame/screens/note_modifier.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/note_reader.dart';
@@ -38,7 +39,7 @@ class NoteList extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => NoteReader(note),
+                                    builder: (context) => NoteModifier(note),
                                   ));
                             }, note))
                         .toList()),

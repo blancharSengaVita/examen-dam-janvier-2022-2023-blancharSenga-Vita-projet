@@ -41,19 +41,33 @@ class _NoteModifierState extends State<NoteModifier> {
                   GestureDetector(
                       onTap: () async {
 
-                        FirebaseFirestore.instance
-                            .collection('notes')
-                            .doc(widget.doc.id)
-                            .update({
-                          'title': titleController.text,
-                          'content': mainController.text,
-                          'date': date,
-                        });
+                        if (titleController.text == '' &&
+                            mainController.text == '') {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const Home(),
+                              ));
+                          FirebaseFirestore.instance
+                              .collection('notes')
+                              .doc(widget.doc.id)
+                              .delete();
+
+                        } else {
+                          FirebaseFirestore.instance
+                              .collection('notes')
+                              .doc(widget.doc.id)
+                              .update({
+                            'title': titleController.text,
+                            'content': mainController.text,
+                            'date': date,
+                          });
+                        }
 
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => NoteReader(widget.doc),
+                              builder: (context) => const Home(),
                             ));
 
                       },
@@ -70,9 +84,6 @@ class _NoteModifierState extends State<NoteModifier> {
                   border: InputBorder.none,
                 ),
                 style: kBigTitleStyle),
-            const SizedBox(
-              height: 10,
-            ),
             TextFormField(
                 keyboardType: TextInputType.multiline,
                 maxLines: null,

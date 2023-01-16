@@ -41,11 +41,12 @@ class _NoteReaderState extends State<NoteReader> {
                   ],
                 ),
               ),
+              const SizedBox(height: 25),
               Text(
                 widget.note['title'],
-                style: kTitleStyle,
+                style: kBigTitleStyle,
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 25),
               Text(
                 widget.note['content'],
                 style: kMainTextStyle,
