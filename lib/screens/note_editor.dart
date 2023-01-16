@@ -7,7 +7,7 @@ import '../note_item.dart';
 import 'home.dart';
 
 class NoteEditor extends StatefulWidget {
-   NoteEditor( {Key? key}) : super(key: key);
+  NoteEditor({Key? key}) : super(key: key);
 
   @override
   State<NoteEditor> createState() => _NoteEditorState();
@@ -32,21 +32,31 @@ class _NoteEditorState extends State<NoteEditor> {
               child: Row(
                 children: [
                   GestureDetector(
+                      onTap: () async {
+                        if (titleController.text == '' &&
+                            mainController.text == '') {
 
-                    onTap: () async {
-                      FirebaseFirestore.instance.collection('notes').add({
-                        'title': titleController.text,
-                        'content' : mainController.text,
-                        'date' : date,
-                      }).then((value){
-                        if (kDebugMode) {
-                          print(value.id);
-                          Navigator.pop(context);
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const Home(),
+                              ));
+
+                        } else {
+                          FirebaseFirestore.instance.collection('notes').add({
+                            'title': titleController.text,
+                            'content': mainController.text,
+                            'date': date,
+                          }).then((value) {
+                            if (kDebugMode) {
+                              print(value.id);
+                              Navigator.pop(context);
+                            }
+                          }).catchError((error) =>
+                              print('Failed to add new Note due to $error'));
                         }
-                      }).catchError((error) => print('Failed to add new Note due to $error'));
-                    },
-                      child: const Icon(Icons.arrow_back_ios, size: 30)
-                  ),
+                      },
+                      child: const Icon(Icons.arrow_back_ios, size: 30)),
                 ],
               ),
             ),
@@ -63,19 +73,14 @@ class _NoteEditorState extends State<NoteEditor> {
               height: 10,
             ),
             TextFormField(
-                keyboardType: TextInputType.multiline,
-                maxLines: null,
-                controller: mainController,
-                decoration: const InputDecoration(
-                  hintText: "Note",
-                  border: InputBorder.none,
-                ),
-                style: kMainTextStyle,
-              validator: (value) {
-                if (value == null || value.isEmpty) {
-                  return 'La note ne peut pas etre vide';
-                }
-              },
+              keyboardType: TextInputType.multiline,
+              maxLines: null,
+              controller: mainController,
+              decoration: const InputDecoration(
+                hintText: "Note",
+                border: InputBorder.none,
+              ),
+              style: kMainTextStyle,
             ),
           ],
         ),
