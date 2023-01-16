@@ -1,8 +1,7 @@
 import 'package:exame/partials/MenuItemData.dart';
-import 'package:exame/partials/avatar.dart';
 import 'package:exame/styles/constants.dart';
-import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 
 import '../../routes/routes.dart';
 import '../model/data_item.dart';
@@ -47,15 +46,11 @@ class _SidebarScreenState extends State<SidebarScreen> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children:  [
-                          const Text("SparklesSupa", style: TextStyle(
-                              fontSize: 20,
-                              color : kMainTextColor,
-                              fontWeight: FontWeight.bold,
-                          ),),
+                          const Text("Sparkles Notes", style: kSideBarUsername),
                           const SizedBox(height: kSmallHeightSpacer),
                           Text('${FirebaseAuth.instance.currentUser!.email}'),
                           const SizedBox(height: 6),
-                          const Text("122 notes")
+                          // const Text("122 notes")
                         ],
                       ),
                     ],
@@ -98,3 +93,4 @@ class _SidebarScreenState extends State<SidebarScreen> {
     );
   }
 }
+

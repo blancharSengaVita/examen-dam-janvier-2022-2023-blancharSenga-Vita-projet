@@ -1,7 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:exame/routes/routes.dart';
 import 'package:exame/styles/constants.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+
 import '../partials/form/note_form/text_note_input.dart';
 import 'home.dart';
 
@@ -37,7 +39,6 @@ class _NoteModifierState extends State<NoteModifier> {
                 children: [
                   GestureDetector(
                       onTap: () async {
-
                         if (titleController.text == '' &&
                             mainController.text == '') {
                           Navigator.push(
@@ -68,7 +69,26 @@ class _NoteModifierState extends State<NoteModifier> {
                             ));
 
                       },
-                      child: const Icon(Icons.arrow_back_ios, size: 30)),
+                      child: const Icon(Icons.arrow_back_ios, size: 30)
+                  ),
+                  const Spacer(),
+                  GestureDetector(
+                    onTap: ()async {
+                      FirebaseFirestore.instance
+                          .collection('notes')
+                          .doc(widget.doc.id)
+                          .delete();
+
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const Home(),
+                          ));
+
+                    },
+                    child: const Icon(Icons.delete, size: 30),
+                  ),
+
                 ],
               ),
             ),

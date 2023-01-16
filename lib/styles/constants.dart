@@ -10,6 +10,12 @@ const kMainTextColor = Color(0xFF000000);
 const kMainBackgroundColor = Color(0xFFFFFFFF);
 const kPlaceholderColor = Color(0xFF989898);
 
+const kSideBarUsername = TextStyle(
+fontSize: 20,
+color : kMainTextColor,
+fontWeight: FontWeight.bold,
+);
+
 const kBigTitleStyle = TextStyle(
     fontSize: 35,
     color : kMainTextColor,
