@@ -45,7 +45,7 @@ class _ResetPasswordState extends State<ResetPassword> {
                       ),
                       child: Column(
                         children: [
-                          const EmailInput(),
+                          EmailInput(),
                           const SizedBox(height: kLoginInputSpacer),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -56,7 +56,7 @@ class _ResetPasswordState extends State<ResetPassword> {
                                     Navigator.pushNamed(context, kLoginRoute);
                                   }),
                               Link(
-                                text: 's\'incrire',
+                                text: 'Se créer un compte',
                                 onTap: () {
                                   Navigator.pushNamed(context, kRegisterRoute);
                                 },

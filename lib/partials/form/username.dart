@@ -5,7 +5,9 @@ import '../../styles/constants.dart';
 
 @immutable
 class UserNameInput extends StatelessWidget {
-  const UserNameInput({Key? key}) : super(key: key);
+  final ValueChanged<String>? onChanged;
+  const UserNameInput({this.onChanged,Key? key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +22,7 @@ class UserNameInput extends StatelessWidget {
         ),
         const SizedBox(height: 6),
         TextInput(
+          value: "",
           hintText: 'example',
           keyboardType: TextInputType.text,
           validator: (value) {
@@ -29,6 +32,7 @@ class UserNameInput extends StatelessWidget {
               return 'Le nom d’utilisateur doit contenir au moins 2 caractères.';
             }
           },
+          onChanged: onChanged,
         ),
       ],
     );

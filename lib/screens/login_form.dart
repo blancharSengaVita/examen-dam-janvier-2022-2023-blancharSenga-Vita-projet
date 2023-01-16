@@ -60,7 +60,7 @@ class LoginForm extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Link(
-                          text: 'Créer un compte',
+                          text: 'Se créer un compte',
                           onTap: () {
                             Navigator.pushNamed(context, kRegisterRoute);
                           }),
