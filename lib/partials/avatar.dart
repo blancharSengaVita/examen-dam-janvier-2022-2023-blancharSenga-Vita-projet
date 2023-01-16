@@ -7,12 +7,10 @@ class Avatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-        borderRadius: BorderRadius.circular(50.0),
-        child: const Image(
-          image: AssetImage('assets/pictures/profile.jpg'),
-          width: kDefaultWidth,
-          height: kDefaultWidth,
-        ));
+    return const Icon(
+      Icons.account_circle,
+      color: Colors.black,
+      size: 38.0,
+    );
   }
 }

@@ -2,17 +2,19 @@ import 'package:flutter/material.dart';
 import '../styles/constants.dart';
 
 class TitleTitle extends StatelessWidget {
-  const TitleTitle({Key? key}) : super(key: key);
+  TitleTitle(this.value, {Key? key}) : super(key: key);
+
+  final String value;
 
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: const [
-        SizedBox(
+      children: [
+        const SizedBox(
           width: 20,
         ),
         Text(
-          "Toutes les notes",
+          value,
           style: kTitleStyle,
           textAlign: TextAlign.left,
         ),

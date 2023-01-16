@@ -1,12 +1,10 @@
 import 'package:exame/partials/buttons/add_note_button.dart';
 import 'package:exame/partials/navbar/nav_bar.dart';
-import 'package:exame/partials/note_grid.dart';
 import 'package:exame/partials/title.dart';
 import 'package:flutter/material.dart';
 import '../partials/note_list.dart';
 import '../partials/sidebar/sidebar.dart';
 import '../styles/constants.dart';
-import 'note_editor.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -30,13 +28,15 @@ class _HomeState extends State<Home> {
         body: Padding(
           padding: const EdgeInsets.only(top: kMargin * 3, bottom: kMargin),
           child: Column(
-            children: const [
-              NavBar(),
-              SizedBox(
+            children: [
+              const NavBar(),
+              const SizedBox(
                 height: 25,
               ),
-              TitleTitle(),
-              NoteList(),
+              TitleTitle(
+                'Toutes les notes'
+              ),
+              const NoteList(),
             ],
           ),
         ),

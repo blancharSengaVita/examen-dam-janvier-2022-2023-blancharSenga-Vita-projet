@@ -6,7 +6,7 @@ import '../screens/note_editor.dart';
 import '../styles/constants.dart';
 
 
-  Widget noteCard(Function()? onTap, QueryDocumentSnapshot doc) {
+  Widget noteCard(Function()? onTap, QueryDocumentSnapshot note) {
     return InkWell(
       onTap: onTap,
       child: Container(
@@ -21,12 +21,12 @@ import '../styles/constants.dart';
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(doc["title"], style: kCardNoteTitleStyle,),
+            Text(note["title"], style: kCardNoteTitleStyle,),
             const SizedBox(
               height: 10,
             ),
             Text(
-                doc["content"],
+                note["content"],
                 style: kCardNoteContentTextStyle
             )
           ],

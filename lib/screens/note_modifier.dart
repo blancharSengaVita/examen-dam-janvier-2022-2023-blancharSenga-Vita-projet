@@ -1,12 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:exame/routes/routes.dart';
 import 'package:exame/styles/constants.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-
-import '../note_item.dart';
+import '../partials/form/note_form/text_note_input.dart';
 import 'home.dart';
-import 'note_reader.dart';
 
 class NoteModifier extends StatefulWidget {
   NoteModifier(this.doc, {Key? key}) : super(key: key);
@@ -75,24 +72,16 @@ class _NoteModifierState extends State<NoteModifier> {
                 ],
               ),
             ),
-            TextFormField(
-                keyboardType: TextInputType.multiline,
-                maxLines: null,
-                controller: titleController,
-                decoration: const InputDecoration(
-                  hintText: "Title",
-                  border: InputBorder.none,
-                ),
-                style: kBigTitleStyle),
-            TextFormField(
-                keyboardType: TextInputType.multiline,
-                maxLines: null,
-                controller: mainController,
-                decoration: const InputDecoration(
-                  hintText: "Note",
-                  border: InputBorder.none,
-                ),
-                style: kMainTextStyle),
+            TextNoteInput(
+              hintText: 'Title',
+              controller: titleController,
+              style: kBigTitleStyle,
+            ),
+            TextNoteInput(
+              hintText: 'Note',
+              controller: mainController,
+              style: kMainTextStyle,
+            ),
           ],
         ),
       ),
