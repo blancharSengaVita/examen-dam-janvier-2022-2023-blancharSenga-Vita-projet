@@ -7,16 +7,13 @@ class Avatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 38,
-      child: IconButton(
-        onPressed: () => Scaffold.of(context).openDrawer(),
-        icon: const Icon(
+    return  GestureDetector(
+        onTap: () => Scaffold.of(context).openDrawer(),
+        child: const Icon(
           Icons.account_circle,
           color: Colors.black,
           size: 38.0,
         ),
-      ),
-    );
+      );
   }
 }
