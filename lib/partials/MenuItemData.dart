@@ -13,7 +13,7 @@ class MyMenuItem extends StatelessWidget {
       children: [
         Row(children: [
           Container(
-            width: kMargin * 2,
+            width: 40,
             alignment: Alignment.bottomRight,
             child: IconButton(
               icon: menuItemData.icon,
@@ -22,7 +22,7 @@ class MyMenuItem extends StatelessWidget {
               onPressed: () {},
             ),
           ),
-          const SizedBox(width: 20),
+          const SizedBox(width: kNormalHeightSpacer),
           Text(
             menuItemData.name,
             style: kTitleStyle,

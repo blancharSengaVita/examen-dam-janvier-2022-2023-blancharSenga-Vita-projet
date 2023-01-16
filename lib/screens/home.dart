@@ -11,12 +11,15 @@ class Home extends StatefulWidget {
 
   @override
   State<Home> createState() => _HomeState();
+
 }
 
 class _HomeState extends State<Home> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
         drawer: Theme(
           data: Theme.of(context).copyWith(
             canvasColor: Colors.transparent,
@@ -26,12 +29,12 @@ class _HomeState extends State<Home> {
           ),
         ),
         body: Padding(
-          padding: const EdgeInsets.only(top: kMargin * 3, bottom: kMargin),
+          padding: const EdgeInsets.only(top: kNormalHeightSpacer * 3, bottom: kNormalHeightSpacer),
           child: Column(
             children: [
               const NavBar(),
               const SizedBox(
-                height: 25,
+                height: kNormalHeightSpacer*1.25,
               ),
               TitleTitle(
                 'Toutes les notes'
@@ -44,3 +47,4 @@ class _HomeState extends State<Home> {
     );
   }
 }
+

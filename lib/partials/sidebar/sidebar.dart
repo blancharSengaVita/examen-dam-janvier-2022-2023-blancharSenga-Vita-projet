@@ -46,16 +46,16 @@ class _SidebarScreenState extends State<SidebarScreen> {
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Text("SparklesSupa", style: TextStyle(
+                        children:  [
+                          const Text("SparklesSupa", style: TextStyle(
                               fontSize: 20,
                               color : kMainTextColor,
                               fontWeight: FontWeight.bold,
                           ),),
-                          SizedBox(height: 6),
-                          Text("Anchar2107@gmail.com"),
-                          SizedBox(height: 6),
-                          Text("122 notes")
+                          const SizedBox(height: kSmallHeightSpacer),
+                          Text('${FirebaseAuth.instance.currentUser!.email}'),
+                          const SizedBox(height: 6),
+                          const Text("122 notes")
                         ],
                       ),
                     ],
@@ -67,18 +67,17 @@ class _SidebarScreenState extends State<SidebarScreen> {
               ),
               MyMenuItem(menuItemData: menuItemsData[0]),
               MyMenuItem(menuItemData: menuItemsData[1]),
-              MyMenuItem(menuItemData: menuItemsData[2]),
               const Spacer(),
               Padding(
-                padding: const EdgeInsets.only(left: 10),
+                padding: const EdgeInsets.only(left: kMargin/2),
                 child: Row(
                   children: [
                     const Icon(
                       Icons.logout,
                       color: Colors.black,
-                      size: 40, 
+                      size: 40,
                     ),
-                    const SizedBox(width: 5),
+                    const SizedBox(width: kMargin/4),
                     TextButton(
                       onPressed: () {
                         _signOut();

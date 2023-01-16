@@ -13,21 +13,15 @@ class MenuItemData {
 
 List<MenuItemData> menuItemsData = const [
   MenuItemData(
-    name: " Paramètre",
+    name: "Notes",
     icon: Icon(
-      Icons.settings,
+      Icons.description,
     ),
   ),
   MenuItemData(
-    name: "Archive",
+    name: "Archives",
     icon: Icon(
       Icons.archive,
-    ),
-  ),
-  MenuItemData(
-    name: "Corbeille",
-    icon: Icon(
-      Icons.delete,
     ),
   ),
 ];

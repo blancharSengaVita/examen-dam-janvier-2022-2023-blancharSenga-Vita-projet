@@ -22,7 +22,7 @@ class PasswordInput extends StatelessWidget {
         const SizedBox(height: 6),
         TextInput(
           value: "",
-          hintText: '',
+          hintText: '•••••••••',
           keyboardType: TextInputType.visiblePassword,
           validator: (value) {
             if (value == null || value.isEmpty) {

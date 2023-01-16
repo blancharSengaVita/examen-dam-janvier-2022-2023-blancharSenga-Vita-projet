@@ -2,8 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:exame/partials/buttons/form_button.dart';
 import '../partials/form/email_input.dart';
-import '../partials/form/password_input.dart';
-import '../partials/form/username.dart';
 import 'package:exame/partials/form/form_header.dart';
 import '../partials/link.dart';
 import '../routes/router.dart';
@@ -40,9 +38,9 @@ class _ResetPasswordState extends State<ResetPassword> {
                     ),
                     Container(
                       margin:  const EdgeInsets.only(
-                          top: kMargin * 2.5, bottom: kMargin),
+                          top: kNormalHeightSpacer* 2.5, bottom: kNormalHeightSpacer),
                       padding:  const EdgeInsets.symmetric(
-                        vertical: kMargin,
+                        vertical: kNormalHeightSpacer,
                         horizontal: kMargin,
                       ),
                       child: Column(
@@ -66,7 +64,7 @@ class _ResetPasswordState extends State<ResetPassword> {
                             ],
                           ),
                           const SizedBox(
-                            height: 40,
+                            height: kNormalHeightSpacer*2,
                           ),
                           Button(label : 'Envoyer un mail de reinitialisation', onPressed: () {
                             goHome(formKey: _registerFormKey, context: context);

@@ -22,8 +22,8 @@ class RegisterForm extends StatefulWidget {
 class _RegisterFormState extends State<RegisterForm> {
   final _registerFormKey = GlobalKey<FormState>();
   String _userName = "";
-  String _email = "daniel.schreurs@hotmail.com";
-  String _password = "1234567890";
+  String _email = "";
+  String _password = "";
 
   @override
   Widget build(BuildContext context) {

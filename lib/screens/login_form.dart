@@ -83,11 +83,6 @@ class LoginForm extends StatelessWidget {
                             .signInWithEmailAndPassword(
                             email: _email, password: _password)
                             .then((value) {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(
-                                content: Text(
-                                    'Bonjour ${FirebaseAuth.instance.currentUser!.email}')),
-                          );
                           Navigator.pushNamed(context, kHomeRoute);
                         });
                       } on FirebaseAuthException catch (e) {

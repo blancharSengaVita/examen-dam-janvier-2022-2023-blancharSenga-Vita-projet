@@ -11,7 +11,7 @@ class TitleTitle extends StatelessWidget {
     return Row(
       children: [
         const SizedBox(
-          width: 20,
+          width: kNormalHeightSpacer,
         ),
         Text(
           value,
