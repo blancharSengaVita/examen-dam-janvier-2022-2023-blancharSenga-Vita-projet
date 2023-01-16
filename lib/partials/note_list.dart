@@ -3,7 +3,6 @@ import 'package:exame/partials/note_card.dart';
 import 'package:exame/screens/note_modifier.dart';
 import 'package:flutter/material.dart';
 
-import '../screens/note_reader.dart';
 import '../styles/constants.dart';
 
 class NoteList extends StatelessWidget {

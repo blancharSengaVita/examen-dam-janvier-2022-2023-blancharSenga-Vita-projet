@@ -1,12 +1,10 @@
 import 'package:exame/routes/routes.dart';
-import 'package:exame/screens/note_reader.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 
 import '../screens/home.dart';
 import '../screens/login_form.dart';
-import '../screens/note_editor.dart';
 import '../screens/register_form.dart';
 import '../screens/reset_password_form.dart';
 

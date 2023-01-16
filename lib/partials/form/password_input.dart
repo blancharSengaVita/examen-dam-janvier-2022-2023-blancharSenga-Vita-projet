@@ -22,14 +22,13 @@ class PasswordInput extends StatelessWidget {
         const SizedBox(height: 6),
         TextInput(
           value: "",
-          labelText: '',
           hintText: '',
           keyboardType: TextInputType.visiblePassword,
           validator: (value) {
             if (value == null || value.isEmpty) {
               return 'Le mot de passe doit être renseigné.';
-            } else if (value.length < 9) {
-              return 'Le mot de passe doit contenir au moins 9 caractères.';
+            } else if (value.length < 3) {
+              return 'Le mot de passe doit contenir au moins 3 caractères.';
             }
           },
           obscureText: true,

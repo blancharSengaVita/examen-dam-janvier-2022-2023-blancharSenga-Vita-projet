@@ -6,7 +6,7 @@ import '../partials/form/email_input.dart';
 import '../partials/form/password_input.dart';
 import '../partials/form/username.dart';
 import 'package:exame/partials/form/form_header.dart';
-import '../partials/links.link.dart';
+import '../partials/link.dart';
 import '../partials/model/error_firebase_auth.dart';
 import '../routes/router.dart';
 import '../routes/routes.dart';

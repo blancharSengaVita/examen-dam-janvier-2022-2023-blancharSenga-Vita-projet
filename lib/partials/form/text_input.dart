@@ -6,7 +6,6 @@ import '../../styles/constants.dart';
 class TextInput extends StatelessWidget {
   const TextInput(
       {
-        required this.labelText,
         this.hintText = "",
         this.keyboardType = TextInputType.text,
         required this.validator,
@@ -17,7 +16,6 @@ class TextInput extends StatelessWidget {
         Key? key})
       : super(key: key);
   final String hintText;
-  final String labelText;
   final bool obscureText;
   final bool autofocus;
   final TextInputType keyboardType;
@@ -38,11 +36,8 @@ class TextInput extends StatelessWidget {
       style: kCardNoteContentTextStyle,
 
       decoration: InputDecoration(
-        labelText: labelText,
-        hintStyle: kCardNoteContentTextStyle,
-
+        hintStyle: kPlaceholderTextStyle,
         hintText: hintText,
-        labelStyle: kCardNoteContentTextStyle,
 
         contentPadding:
         const EdgeInsets.symmetric(horizontal: 20, vertical: 0),

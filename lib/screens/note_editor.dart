@@ -3,7 +3,6 @@ import 'package:exame/styles/constants.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import '../note_item.dart';
 import '../partials/form/note_form/text_note_input.dart';
 import 'home.dart';
 

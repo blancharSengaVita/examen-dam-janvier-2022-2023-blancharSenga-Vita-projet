@@ -5,7 +5,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import '../partials/form/email_input.dart';
 import '../partials/form/password_input.dart';
-import '../partials/links.link.dart';
+import '../partials/link.dart';
 import '../partials/model/error_firebase_auth.dart';
 import '../routes/router.dart';
 import '../routes/routes.dart';
@@ -50,12 +50,12 @@ class LoginForm extends StatelessWidget {
                     },
                   ),
                   const SizedBox(
-                    height: 22,
+                    height: kLoginInputSpacer*1.5,
                   ),
                   PasswordInput(onChanged: (value) {
                     _password = value;
                   }),
-                  const SizedBox(height: 14),
+                  const SizedBox(height: kLoginInputSpacer),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -73,7 +73,7 @@ class LoginForm extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(
-                    height: 40,
+                    height: kLoginInputSpacer*2.9,
                   ),
                   Button(label : 'Se connecter', onPressed: () async {
                     if (_loginFormKey.currentState != null &&

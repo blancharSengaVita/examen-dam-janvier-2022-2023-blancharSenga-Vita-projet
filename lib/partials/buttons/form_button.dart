@@ -26,7 +26,7 @@ class Button extends StatelessWidget {
         child: Text(
           label,
           textAlign: TextAlign.center,
-          style: kTitleStyle,
+          style: kLoginFormButtonStyle,
         ),
       ),
     );

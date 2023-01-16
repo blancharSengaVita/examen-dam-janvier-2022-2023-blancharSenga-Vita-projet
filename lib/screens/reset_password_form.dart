@@ -5,7 +5,7 @@ import '../partials/form/email_input.dart';
 import '../partials/form/password_input.dart';
 import '../partials/form/username.dart';
 import 'package:exame/partials/form/form_header.dart';
-import '../partials/links.link.dart';
+import '../partials/link.dart';
 import '../routes/router.dart';
 import '../routes/routes.dart';
 import '../styles/constants.dart';
@@ -47,8 +47,8 @@ class _ResetPasswordState extends State<ResetPassword> {
                       ),
                       child: Column(
                         children: [
-                          const UserNameInput(),
-                          const SizedBox(height: 14),
+                          const EmailInput(),
+                          const SizedBox(height: kLoginInputSpacer),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -68,7 +68,7 @@ class _ResetPasswordState extends State<ResetPassword> {
                           const SizedBox(
                             height: 40,
                           ),
-                          Button(label : 'Se connecter', onPressed: () {
+                          Button(label : 'Envoyer un mail de reinitialisation', onPressed: () {
                             goHome(formKey: _registerFormKey, context: context);
                           }
                           )

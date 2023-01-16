@@ -20,7 +20,6 @@ class UserNameInput extends StatelessWidget {
         ),
         const SizedBox(height: 6),
         TextInput(
-          labelText: '',
           hintText: 'example',
           keyboardType: TextInputType.text,
           validator: (value) {

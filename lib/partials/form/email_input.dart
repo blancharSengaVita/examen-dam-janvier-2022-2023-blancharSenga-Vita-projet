@@ -20,10 +20,9 @@ class EmailInput extends StatelessWidget {
                 textAlign: TextAlign.start),
           ],
       ),
-       const SizedBox(height: 6),
+       const SizedBox(height: kLoginInputSpacer/2),
         TextInput(
           value: "",
-          labelText: '',
           hintText: 'exemple@mail.com',
           keyboardType: TextInputType.emailAddress,
           validator: (value) {
