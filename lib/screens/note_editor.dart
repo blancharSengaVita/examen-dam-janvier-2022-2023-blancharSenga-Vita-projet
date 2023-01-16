@@ -32,6 +32,7 @@ class _NoteEditorState extends State<NoteEditor> {
               child: Row(
                 children: [
                   GestureDetector(
+
                     onTap: () async {
                       FirebaseFirestore.instance.collection('notes').add({
                         'title': titleController.text,
@@ -49,7 +50,7 @@ class _NoteEditorState extends State<NoteEditor> {
                 ],
               ),
             ),
-            TextField(
+            TextFormField(
                 keyboardType: TextInputType.multiline,
                 maxLines: null,
                 controller: titleController,
@@ -61,7 +62,7 @@ class _NoteEditorState extends State<NoteEditor> {
             const SizedBox(
               height: 10,
             ),
-            TextField(
+            TextFormField(
                 keyboardType: TextInputType.multiline,
                 maxLines: null,
                 controller: mainController,
@@ -69,7 +70,13 @@ class _NoteEditorState extends State<NoteEditor> {
                   hintText: "Note",
                   border: InputBorder.none,
                 ),
-                style: kMainTextStyle),
+                style: kMainTextStyle,
+              validator: (value) {
+                if (value == null || value.isEmpty) {
+                  return 'La note ne peut pas etre vide';
+                }
+              },
+            ),
           ],
         ),
       ),

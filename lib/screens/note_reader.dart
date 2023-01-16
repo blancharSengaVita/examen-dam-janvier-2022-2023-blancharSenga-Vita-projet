@@ -1,12 +1,14 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:exame/screens/note_editor.dart';
+import 'package:exame/screens/note_modifier.dart';
 import 'package:exame/styles/constants.dart';
 import 'package:flutter/material.dart';
 
 import 'home.dart';
 
 class NoteReader extends StatefulWidget {
-  NoteReader(this.doc, {Key? key}) : super(key: key);
-  QueryDocumentSnapshot doc;
+  NoteReader(this.note, {Key? key}) : super(key: key);
+  QueryDocumentSnapshot note;
 
   @override
   State<NoteReader> createState() => _NoteReaderState();
@@ -40,17 +42,26 @@ class _NoteReaderState extends State<NoteReader> {
                 ),
               ),
               Text(
-                widget.doc['title'],
-                style: kTitleStyle ,
+                widget.note['title'],
+                style: kTitleStyle,
               ),
-              const SizedBox(height : 20),
+              const SizedBox(height: 20),
               Text(
-                widget.doc['content'],
-                style: kMainTextStyle ,
+                widget.note['content'],
+                style: kMainTextStyle,
               ),
             ],
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => NoteModifier(widget.note),
+                  ));
+        },
       ),
     );
   }

@@ -1,6 +1,8 @@
 import 'package:exame/routes/routes.dart';
+import 'package:exame/screens/note_reader.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+
 
 import '../screens/home.dart';
 import '../screens/login_form.dart';
@@ -12,7 +14,7 @@ Map<String, WidgetBuilder> router = {
   kHomeRoute: (context) =>  const Home(),
   kLoginRoute: (context) => LoginForm(),
   kRegisterRoute: (context) => const RegisterForm(),
-  kResetPasswordRoute:(context) => const ResetPassword()
+  kResetPasswordRoute:(context) => const ResetPassword(),
 };
 
 goHome({formKey, context}) {
