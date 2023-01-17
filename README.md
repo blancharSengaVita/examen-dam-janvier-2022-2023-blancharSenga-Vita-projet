@@ -64,31 +64,69 @@ Partout, à toute heure
 |-----|-----------|
 | - on peut conserver nos notes dans le cloud</br> - on peut mettre plusieurs rappelles dans une notes</br> - on peut styliser nos notes</br> - on peut avoir des dossier de nos notes | - disponible que sur IOS (pas pu voir les défauts</br> - prends pas en charge le markdown</br> - disponible sur une seule platform |
 
-## ⚙️ Fonctionnalités 
-- Se connecter
-- S'inscrire
-- Enregistrer des notes
-- Modifier des notes
-- Supprimer des notes
+
 
 ##Site Map
+
 ![Site Map](https://user-images.githubusercontent.com/73910195/212946731-38e20c1d-e666-4835-9e69-4965ed730d5a.png)
 
 ##Moodboard
+
 ![Moodboard](https://user-images.githubusercontent.com/73910195/212946569-1033e20e-87eb-4206-a6dc-8b7ef8f07933.png)
 
 ##Design
+
 <img width="688" alt="image" src="https://user-images.githubusercontent.com/73910195/212947723-06569247-903e-4aff-91db-7b7f7ee56335.png">
 
 Des choses ont changés entre le design et le développement de l'appli 
 
-##Applications
+## ⚙️ Fonctionnalités
+
+
+
+- S'inscrire
+![S'inscrire VRAI GIF](https://user-images.githubusercontent.com/73910195/212981412-500e0e0d-784c-4d65-afd9-7baf3b1a31ec.gif)
+
+- Se connecter
+![Se connecter VRAI GIF](https://user-images.githubusercontent.com/73910195/212981414-25d5ee9b-6a74-43db-bbcc-f75ee62aec8f.gif)
+
+
+- Enregistrer des notes
+![Enregistrer une note 2023-01-17 19_27_47](https://user-images.githubusercontent.com/73910195/212981405-a56381b5-4618-4901-ba55-80a8ac99a8f3.gif)
+
+- Modifier des notes
+![mmodifier une note VRAI GIF](https://user-images.githubusercontent.com/73910195/212981411-28974b1b-ad3e-4620-aee8-f018aaf43222.gif)
+
+- Supprimer des notes
+![Supprimer des notes VRAI GIF](https://user-images.githubusercontent.com/73910195/212981418-74cb4b47-e2a4-4c52-b763-223f2da12fc5.gif)
+
 
 ##Arborecences des fichiers
+Dans le fichier lib, On peut retrouver
+- Screens : là où se situe les différents écrans
+- Routes : qui contient les routes utiliser pour naviguer d'une page à une autre
+- Partials : qui contient les dossiers pour
+  - la sidebar
+  - la barre de navigation
+  - le model avec certaines data
+  - les widgets des champs de forms
+  - des buttons
+  - la carte de base d'une note
+  - Et le widget "liste de note"
+- Style : qui contient des couleur, des styles pour les textes, etc.
 
 ##Avancement / Implémentation future
-
-
+Pouvoir archiver la note
+Pouvoir Chercher une note 
+Avoir la version outline des icones
+Implénter un "soft delete" (une corbeille)
+Laisser le user avoir une photo de profil
+Pouvoir supprimer ou archiver la note en maintenant la carte de la note
+Pouvoir sélectionner plusieurs notes
+Ajouter du richtext dans les notes
+Ajouter la possibilité de mettre des notes photos
+Changer l’affichage de la grille
+Qu’on puisse créer sa catégorie préférée
 
 
 
