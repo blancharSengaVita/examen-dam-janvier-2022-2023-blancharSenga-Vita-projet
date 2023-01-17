@@ -84,21 +84,31 @@ Des choses ont changés entre le design et le développement de l'appli
 
 
 
-- S'inscrire
-![S'inscrire VRAI GIF](https://user-images.githubusercontent.com/73910195/212981412-500e0e0d-784c-4d65-afd9-7baf3b1a31ec.gif)
+###S'inscrire
 
-- Se connecter
-![Se connecter VRAI GIF](https://user-images.githubusercontent.com/73910195/212981414-25d5ee9b-6a74-43db-bbcc-f75ee62aec8f.gif)
+  ![S'inscrire 2023-01-17 19_48_12](https://user-images.githubusercontent.com/73910195/212985924-2d61bb6d-8fea-4f9d-a8bb-f80196c05fef.gif)
+
+###Se connecter
+
+  ![Se connecter 2023-01-17 19_47_43](https://user-images.githubusercontent.com/73910195/212985926-dc77d55c-c2db-4ef7-ac96-dc77c2ca1456.gif)
 
 
-- Enregistrer des notes
-![Enregistrer une note 2023-01-17 19_27_47](https://user-images.githubusercontent.com/73910195/212981405-a56381b5-4618-4901-ba55-80a8ac99a8f3.gif)
+### Enregistrer des notes
 
-- Modifier des notes
-![mmodifier une note VRAI GIF](https://user-images.githubusercontent.com/73910195/212981411-28974b1b-ad3e-4620-aee8-f018aaf43222.gif)
+  ![Enregistrer une note 2023-01-17 19_49_21](https://user-images.githubusercontent.com/73910195/212985907-b9f21503-a475-46a8-96df-8407fa3832cf.gif)
 
-- Supprimer des notes
-![Supprimer des notes VRAI GIF](https://user-images.githubusercontent.com/73910195/212981418-74cb4b47-e2a4-4c52-b763-223f2da12fc5.gif)
+
+### Modifier des notes
+
+  ![mmodifier une note 2023-01-17 19_48_41](https://user-images.githubusercontent.com/73910195/212985922-dfc27f30-cd17-48c5-85cd-50b93d53b8d8.gif)
+
+### Supprimer des notes
+
+  ![Supprimer des notes 2023-01-17 19_46_30](https://user-images.githubusercontent.com/73910195/212985928-e1f991bb-dba7-44f3-8221-501f9a43ed16.gif)
+
+
+
+
 
 
 ##Arborecences des fichiers
@@ -116,17 +126,18 @@ Dans le fichier lib, On peut retrouver
 - Style : qui contient des couleur, des styles pour les textes, etc.
 
 ##Avancement / Implémentation future
-Pouvoir archiver la note
-Pouvoir Chercher une note 
-Avoir la version outline des icones
-Implénter un "soft delete" (une corbeille)
-Laisser le user avoir une photo de profil
-Pouvoir supprimer ou archiver la note en maintenant la carte de la note
-Pouvoir sélectionner plusieurs notes
-Ajouter du richtext dans les notes
-Ajouter la possibilité de mettre des notes photos
-Changer l’affichage de la grille
-Qu’on puisse créer sa catégorie préférée
+- Pouvoir archiver la note
+- Pouvoir Chercher une note 
+- Avoir la version outline des icones
+- Implénter un "soft delete" (une corbeille)
+- Laisser le user avoir une photo de profil
+- Pouvoir supprimer ou archiver la note en maintenant la carte de la note
+- Pouvoir sélectionner plusieurs notes
+- Ajouter du richtext dans les notes
+- Ajouter la possibilité de mettre des notes photos
+- Changer l’affichage de la grille
+- ,klm+:m=£Qu’on puisse créer sa catégorie préférée
+-  
 
 
 

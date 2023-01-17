@@ -19,7 +19,7 @@ class FormHeader extends StatelessWidget {
           height: 14,
         ),
         const Text(
-          'Sparkles Note',
+          'Sparkles Notes',
           style: kBigTitleStyle,
         ),
         const Text(
