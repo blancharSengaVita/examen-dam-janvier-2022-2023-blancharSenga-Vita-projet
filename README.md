@@ -66,15 +66,15 @@ Partout, à toute heure
 
 
 
-##Site Map
+## Site Map
 
 ![Site Map](https://user-images.githubusercontent.com/73910195/212946731-38e20c1d-e666-4835-9e69-4965ed730d5a.png)
 
-##Moodboard
+## Moodboard
 
 ![Moodboard](https://user-images.githubusercontent.com/73910195/212946569-1033e20e-87eb-4206-a6dc-8b7ef8f07933.png)
 
-##Design
+## Design
 
 <img width="688" alt="image" src="https://user-images.githubusercontent.com/73910195/212947723-06569247-903e-4aff-91db-7b7f7ee56335.png">
 
@@ -84,11 +84,11 @@ Des choses ont changés entre le design et le développement de l'appli
 
 
 
-###S'inscrire
+### S'inscrire
 
   ![S'inscrire 2023-01-17 19_48_12](https://user-images.githubusercontent.com/73910195/212985924-2d61bb6d-8fea-4f9d-a8bb-f80196c05fef.gif)
 
-###Se connecter
+### Se connecter
 
   ![Se connecter 2023-01-17 19_47_43](https://user-images.githubusercontent.com/73910195/212985926-dc77d55c-c2db-4ef7-ac96-dc77c2ca1456.gif)
 
@@ -111,7 +111,7 @@ Des choses ont changés entre le design et le développement de l'appli
 
 
 
-##Arborecences des fichiers
+## Arborecences des fichiers
 Dans le fichier lib, On peut retrouver
 - Screens : là où se situe les différents écrans
 - Routes : qui contient les routes utiliser pour naviguer d'une page à une autre
@@ -125,7 +125,7 @@ Dans le fichier lib, On peut retrouver
   - Et le widget "liste de note"
 - Style : qui contient des couleur, des styles pour les textes, etc.
 
-##Avancement / Implémentation future
+## Avancement / Implémentation future
 - Pouvoir archiver la note
 - Pouvoir Chercher une note 
 - Avoir la version outline des icones
@@ -136,8 +136,7 @@ Dans le fichier lib, On peut retrouver
 - Ajouter du richtext dans les notes
 - Ajouter la possibilité de mettre des notes photos
 - Changer l’affichage de la grille
-- ,klm+:m=£Qu’on puisse créer sa catégorie préférée
--  
+- Qu’on puisse créer sa catégorie préférée
 
 
 
