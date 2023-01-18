@@ -4,7 +4,9 @@
 
 ## 💬 Description de l’application
 
->  « Le cerveau n'a pas été fait pour retenir mais pour des idées trouver » alors voici  *Sparkles Notes*. Une appli qui ne laissera pas vos idées vous échappées.
+>  « Le cerveau n'a pas été fait pour retenir mais pour des idées trouver » 
+
+alors voici  *Sparkles Notes*. Une appli qui ne laissera pas vos idées vous échappées.
 C'est une application qui permet de prendre des notes "rapides".
 
 ## ❓ Pourquoi faire une application de note alors qu’il y en a des tas qui existent
