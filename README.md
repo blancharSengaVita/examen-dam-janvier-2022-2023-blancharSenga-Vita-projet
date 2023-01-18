@@ -4,30 +4,30 @@
 
 ## 💬 Description de l’application
 
->  « Le cerveau n'a pas été fait pour retenir mais pour des idées trouver » 
+>  « Le cerveau n'a pas été fait pour retenir mais pour trouver des idées » 
 
-alors voici  *Sparkles Notes*. Une appli qui ne laissera pas vos idées vous échappées.
+alors voici  *Sparkles Notes*. Une appli qui ne laissera pas vos idées vous échapper.
 C'est une application qui permet de prendre des notes "rapides".
 
-## ❓ Pourquoi faire une application de note alors qu’il y en a des tas qui existent
+## ❓ Pourquoi faire une application de notes alors qu’il y en a des tas qui existent
 
 La vérité est que j'ai créé ce produit pour moi-même. Je suis mon propre client.
-Je suis un fervent "noteur", à chaque fois que j'ai des idées ou que je veux me rappeler le déroulement de ma journée ou encore quoi faire comme course. Je note. Alors naturellement quand on m'a donné l'occasion de pouvoir créer une application, j'ai directement opté pour faire une application de note. Je voulais regrouper toutes les bonnes choses que j'ai vu pour créer l'application de notes "ultimes".
+Je suis un fervent "noteur", à chaque fois que j'ai des idées ou que je veux me rappeler le déroulement de ma journée ou encore quoi faire comme courses, je note. Alors naturellement quand on m'a donné l'occasion de pouvoir créer une application, j'ai directement opté pour faire une application de notes. Je voulais regrouper toutes les bonnes choses que j'ai vu pour créer l'application de notes "ultimes".
 
 ## 👩 Public ciblé (Persona)
 
 ### Blanchar Senga-Vita (moi)
 22 ans, étudiant, Liège, Célibataire
 ![image](https://user-images.githubusercontent.com/73910195/212951920-2100c90d-a29b-4f53-a240-626e3820e79d.png)
->  « J'ai besoin de prendre de notes assez rapidement pour ne pas oublier ce que je dois faire ou ne pas perdre de vue certaines idées »
+>  « J'ai besoin de prendre des notes assez rapidement pour ne pas oublier ce que je dois faire ou ne pas perdre de vue certaines idées »
 
 #### Objectif
 - Noter toutes les choses qui me passent par la tête.
-- Noter les choses à pas oublier sur le long terme (anniversaire, recette de cuisine, course) et les retrouver facilement
+- Noter les choses à pas oublier sur le long terme (anniversaire, recette de cuisine, course) et les retrouver facilement.
 - Prendre des notes rapidement s'il faut.
-- Décharger sa mémoire pour éviter d'être hyper-vigilant sur ce qu'il ne faut pas oublier (avoir une checklist que le fait à sa place par exemple)
-- Accéder à mes notes peu importe le lieu, l'heure, les platforme (ios, android, pc, mac, etc)
-- Regrouper toutes ses notes dans une seule app
+- Décharger sa mémoire pour éviter d'être hyper-vigilant sur ce qu'il ne faut pas oublier (avoir une checklist qui le fait à sa place par exemple).
+- Accéder à mes notes peu importe le lieu, l'heure, les platformes (ios, android, pc, mac, etc).
+- Regrouper toutes ses notes dans une seule app.
 - Avoir ses données protegées. 
 
 #### Contextes d’utilisation
@@ -37,7 +37,7 @@ Je suis un fervent "noteur", à chaque fois que j'ai des idées ou que je veux m
 Comme dit précédemment j'en utilise assez souvent du coup je suis très à l'aise avec les applis de quick notes.
 
 #### Lieu d'utilisation
-Partout, à toute heure
+Partout, à toute heure.
 
 ## 📈 Analyse de l’existante
 
@@ -46,27 +46,27 @@ Partout, à toute heure
 
 | ✅ Pour                                                                                                                                                                                                                                                                                                             | ❌ contre                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| - On peut rapidement faire des notes </br>- On prendre des notes vocal </br>- On peut dessiner  </br>- On peut mettre des rapples sur les notes</br>- On peut mettre des labes sur les notes</br>- Leurs donner une couleur</br>- Mode sombre</br>- Une bonne vue d’ensemble des notes</br>- On peut pin nos notes | </br> - Avoir a la fois une liste de tâches et des textes dans une note. </br> - Placer des images où on veut dans la note. </br> - Avoir une vue d’ensemble chronologique sur les rappels/notes. </br> - Changer le style du texte de nos notes (mettre en gras, en couleur, en italique). </br> - Rajouter du dessin sur nos notes. </br> - Cacher des notes et avoir un mots de passe pour les voir. </br> - Avoir un espace freeform ? </br> - prends pas en charge le markdown |
+| - On peut rapidement faire des notes </br>- On peut prendre des notes vocales </br>- On peut dessiner  </br>- On peut mettre des rappels sur les notes</br>- On peut mettre des labels sur les notes</br>- Leur donner une couleur</br>- Mode sombre</br>- Une bonne vue d’ensemble des notes</br>- On peut pin nos notes | </br> - Avoir à la fois une liste de tâches et des textes dans une note. </br> - Placer des images où on veut dans la note. </br> - Avoir une vue d’ensemble chronologique sur les rappels/notes. </br> - Changer le style du texte de nos notes (mettre en gras, en couleur, en italique). </br> - Rajouter du dessin sur nos notes. </br> - Cacher des notes et avoir un mot de passe pour les voir. </br> - Avoir un espace freeform ? </br> - prends pas en charge le markdown |
 
 
 ### notion
 ![Notion](https://user-images.githubusercontent.com/73910195/212946575-50107677-4efb-46ac-9d7c-d8a9d7101176.png)
 | ✅ pour                                                                                                                                                                                                                                                                                                        | ❌ contre                                                                                                                                                                                                                                                        |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| - On peut imbriquer des notes dans des notes </br> - Nos documents sont en markdown </br> - On peut styliser son workflow </br> - On peut avoir ses notes sur d’autres platforme </br> - on peut chercher nos notes avec une chronologie </br> - on peut rajouter des tableaux et des base de donner de chose | - Compliqué à prendre en main </br> - on peut pas rajouter des dessins deçu </br> - Avoir des rappels pour les notes  - L’app ne favorise pas les quick notes </br> - On a pas une vue d’ensemble des notes </br> - On peut pas styliser à notre gouts nos notes |
+| - On peut imbriquer des notes dans des notes </br> - Nos documents sont en markdown </br> - On peut styliser son workflow </br> - On peut avoir ses notes sur d’autres platformes </br> - on peut chercher nos notes avec une chronologie </br> - on peut rajouter des tableaux et des bases de donné de choses | - Compliqué à prendre en main </br> - on peut pas rajouter des dessins dessus </br> - Avoir des rappels pour les notes  - L’app ne favorise pas les quick notes </br> - On a pas une vue d’ensemble des notes </br> - On peut pas styliser à notre gouts nos notes |
 
 ### Samsung Notes
 ![Samsung Notes](https://user-images.githubusercontent.com/73910195/212946630-e8b632cf-9c1d-4d9f-a2ec-92482d0417e7.png)
 | ✅ pour                                                                                                                                                        | ❌ contre                                                                                                            |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| - On peut créer des dossiers de nos notes</br> - On peut placer son contenu comme on veut sur la page de note</br> - On peut styliser à notre gouts nos notes | - On ne peut pas avoir ses notes sur d’autres platforme (android seulement)</br> - prends pas en charge le markdown |
+| - On peut créer des dossiers de nos notes</br> - On peut placer son contenu comme on veut sur la page de note</br> - On peut styliser à notre goût nos notes | - On ne peut pas avoir ses notes sur d’autres platformes (android seulement)</br> - prends pas en charge le markdown |
 
 ### Apple Notes
 ![Apples Notes](https://user-images.githubusercontent.com/73910195/212946513-17c26ea1-3fcd-4bea-bf5d-97799bc325b3.png)
 
 | ✅  pour | ❌ contre |
 |-----|-----------|
-| - on peut conserver nos notes dans le cloud</br> - on peut mettre plusieurs rappelles dans une notes</br> - on peut styliser nos notes</br> - on peut avoir des dossier de nos notes | - disponible que sur IOS (pas pu voir les défauts</br> - prends pas en charge le markdown</br> - disponible sur une seule platform |
+| - on peut conserver nos notes dans le cloud</br> - on peut mettre plusieurs rappels dans une note</br> - on peut styliser nos notes</br> - on peut avoir des dossiers de nos notes | - disponible que sur IOS (pas pu voir les défauts)</br> - prends pas en charge le markdown</br> - disponible sur une seule plateforme |
 
 
 
@@ -82,7 +82,7 @@ Partout, à toute heure
 
 <img width="688" alt="image" src="https://user-images.githubusercontent.com/73910195/212947723-06569247-903e-4aff-91db-7b7f7ee56335.png">
 
-Des choses ont changés entre le design et le développement de l'appli 
+Des choses ont changé entre le design et le développement de l'appli 
 
 ## ⚙️ Fonctionnalités
 
@@ -115,10 +115,10 @@ Des choses ont changés entre le design et le développement de l'appli
 
 
 
-## Arborecences des fichiers
+## Arborescence des fichiers
 Dans le fichier lib, On peut retrouver :
-- Screens : là où se situe les différents écrans
-- Routes : qui contient les routes utiliser pour naviguer d'une page à une autre
+- Screens : là où se situent les différents écrans
+- Routes : qui contient les routes utilisées pour naviguer d'une page à une autre
 - Partials : qui contient les dossiers pour
   - la sidebar
   - la barre de navigation
@@ -127,13 +127,13 @@ Dans le fichier lib, On peut retrouver :
   - des buttons
   - la carte de base d'une note
   - Et le widget "liste de note"
-- Style : qui contient des couleur, des styles pour les textes, etc.
+- Style : qui contient des couleurs, des styles pour les textes, etc.
 
 ## Avancement / Implémentation future
 - Pouvoir archiver la note
 - Pouvoir Chercher une note 
 - Avoir la version outline des icones
-- Implénter un "soft delete" (une corbeille)
+- Implémenter un "soft delete" (une corbeille)
 - Laisser le user avoir une photo de profil
 - Pouvoir supprimer ou archiver la note en maintenant la carte de la note
 - Pouvoir sélectionner plusieurs notes
