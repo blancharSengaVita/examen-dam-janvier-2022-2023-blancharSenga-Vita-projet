@@ -1,5 +1,7 @@
 # 📝 Sparkles Notes
 
+![Banniere](https://user-images.githubusercontent.com/73910195/213054034-1d6211c9-16ee-45df-8eaa-ee81c4c0bf33.png)
+
 ## 💬 Description de l’application
 
 "Le cerveau n'a pas été fait pour retenir mais pour des idées trouver" alors voici  *Sparkles Notes*. Une appli qui ne laissera pas vos idées vous échappées.
@@ -112,7 +114,7 @@ Des choses ont changés entre le design et le développement de l'appli
 
 
 ## Arborecences des fichiers
-Dans le fichier lib, On peut retrouver
+Dans le fichier lib, On peut retrouver :
 - Screens : là où se situe les différents écrans
 - Routes : qui contient les routes utiliser pour naviguer d'une page à une autre
 - Partials : qui contient les dossiers pour

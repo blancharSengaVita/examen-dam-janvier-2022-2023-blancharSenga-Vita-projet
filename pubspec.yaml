@@ -43,6 +43,7 @@ dependencies:
   cloud_firestore: ^4.3.1
   firebase_storage: ^11.0.10
   flutter_launcher_icons: ^0.11.0
+  rename: ^2.1.1
 
 dev_dependencies:
   flutter_test:
@@ -55,11 +56,12 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
 
-lutter_icons:
-  android: "Sparkles Notes";
+flutter_icons:
+  android: "launcher_icon"
   ios: true
   image_path: "assets/pictures/logo.png"
-  min_sdk_android: 21 # android min sdk min:16, default 21
+  min_sdk_android: 21
+
 
 flutter:
   uses-material-design: true
