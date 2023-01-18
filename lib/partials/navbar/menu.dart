@@ -5,6 +5,6 @@ class Menu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Icon(Icons.more_vert);
+    return const Icon(Icons.more_vert, size: 30,);
   }
 }
