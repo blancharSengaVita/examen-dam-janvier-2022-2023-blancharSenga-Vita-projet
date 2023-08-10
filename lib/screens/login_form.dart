@@ -21,8 +21,10 @@ class LoginForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
         body: SafeArea(
-            child: Form(
-              key: _loginFormKey,
+            child: Center(
+              child: SingleChildScrollView(
+                child: Form(
+                  key: _loginFormKey,
       child:  Padding(
         padding: const EdgeInsets.symmetric(
           horizontal: 20,
@@ -32,79 +34,81 @@ class LoginForm extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisAlignment: MainAxisAlignment.center,
           children:  [
-            const Center(
-              child: FormHeader()
-            ),
-            Container(
-              margin:  const EdgeInsets.only(
-                  top: kMargin * 2.5, bottom: kMargin),
-              padding:  const EdgeInsets.symmetric(
-                vertical: kMargin,
-                horizontal: kMargin,
-              ),
-              child: Column(
-                children: [
-                  EmailInput(
-                    onChanged: (value) {
-                      _email = value;
-                    },
+                const Center(
+                  child: FormHeader()
+                ),
+                Container(
+                  margin:  const EdgeInsets.only(
+                      top: kMargin * 2.5, bottom: kMargin),
+                  padding:  const EdgeInsets.symmetric(
+                    vertical: kMargin,
+                    horizontal: kMargin,
                   ),
-                  const SizedBox(
-                    height: kLoginInputSpacer*1.5,
-                  ),
-                  PasswordInput(onChanged: (value) {
-                    _password = value;
-                  }),
-                  const SizedBox(height: kLoginInputSpacer),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  child: Column(
                     children: [
-                      Link(
-                          text: 'Se créer un compte',
-                          onTap: () {
-                            Navigator.pushNamed(context, kRegisterRoute);
-                          }),
-                      Link(
-                        text: 'Mot de passe oublié',
-                        onTap: () {
-                          Navigator.pushNamed(context, kResetPasswordRoute);
+                      EmailInput(
+                        onChanged: (value) {
+                          _email = value;
                         },
                       ),
+                      const SizedBox(
+                        height: kLoginInputSpacer*1.5,
+                      ),
+                      PasswordInput(onChanged: (value) {
+                        _password = value;
+                      }),
+                      const SizedBox(height: kLoginInputSpacer),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Link(
+                              text: 'Se créer un compte',
+                              onTap: () {
+                                Navigator.pushNamed(context, kRegisterRoute);
+                              }),
+                          Link(
+                            text: 'Mot de passe oublié',
+                            onTap: () {
+                              Navigator.pushNamed(context, kResetPasswordRoute);
+                            },
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: kLoginInputSpacer*2.9,
+                      ),
+                      Button(label : 'Se connecter', onPressed: () async {
+                        if (_loginFormKey.currentState != null &&
+                            _loginFormKey.currentState!.validate()) {
+                          try {
+                            await FirebaseAuth.instance
+                                .signInWithEmailAndPassword(
+                                email: _email, password: _password)
+                                .then((value) {
+                              Navigator.pushNamed(context, kHomeRoute);
+                            });
+                          } on FirebaseAuthException catch (e) {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                  content: Text(
+                                    errors[e.code]!,
+                                    style: const TextStyle(color: Colors.white),
+                                  ),
+                                  backgroundColor: Colors.redAccent),
+                            );
+                          }
+                        }
+                      }
+                      )
                     ],
                   ),
-                  const SizedBox(
-                    height: kLoginInputSpacer*2.9,
-                  ),
-                  Button(label : 'Se connecter', onPressed: () async {
-                    if (_loginFormKey.currentState != null &&
-                        _loginFormKey.currentState!.validate()) {
-                      try {
-                        await FirebaseAuth.instance
-                            .signInWithEmailAndPassword(
-                            email: _email, password: _password)
-                            .then((value) {
-                          Navigator.pushNamed(context, kHomeRoute);
-                        });
-                      } on FirebaseAuthException catch (e) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                              content: Text(
-                                errors[e.code]!,
-                                style: const TextStyle(color: Colors.white),
-                              ),
-                              backgroundColor: Colors.redAccent),
-                        );
-                      }
-                    }
-                  }
-                  )
-                ],
-              ),
-            ),
+                ),
           ],
         ),
       ),
-    )));
+    ),
+              ),
+            )));
   }
 }
 

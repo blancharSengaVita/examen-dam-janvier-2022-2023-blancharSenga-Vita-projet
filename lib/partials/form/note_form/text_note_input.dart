@@ -21,16 +21,30 @@ class TextNoteInput extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
+    // return ConstrainedBox(
+    // constraints: const BoxConstraints(
+    // minWidth: 200,
+    // maxWidth: 400,
+    // minHeight: 25.0,
+    // maxHeight: 600.0,
+    // ),
+
+    //   child: SingleChildScrollView(
+    // scrollDirection: Axis.vertical,
+    // reverse: true,
+    child: return TextFormField(
       keyboardType: keyboardType,
       cursorColor: kMainTextColor,
       controller: controller,
-      maxLines: null,
+      minLines: 1,
+      maxLines: maxlines,
       style: style,
       decoration: InputDecoration(
         hintText: hintText,
         border: InputBorder.none,
       ),
     );
+      // ),
+    // );
   }
 }

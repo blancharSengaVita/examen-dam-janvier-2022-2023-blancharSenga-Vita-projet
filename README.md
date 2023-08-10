@@ -112,9 +112,6 @@ Des choses ont changés entre le design et le développement de l'appli
 
 
 
-
-
-
 ## Arborecences des fichiers
 Dans le fichier lib, On peut retrouver :
 - Screens : là où se situe les différents écrans
