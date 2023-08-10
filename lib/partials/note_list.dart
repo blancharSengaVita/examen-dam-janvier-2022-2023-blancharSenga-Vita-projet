@@ -13,7 +13,6 @@ import '../styles/constants.dart';
 
 class NoteList extends StatelessWidget {
   const NoteList({Key? key}) : super(key: key);
-  final int id = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +21,7 @@ class NoteList extends StatelessWidget {
           stream: FirebaseFirestore.instance
               .collection("notes")
               .where("userID",
-                  isEqualTo: FirebaseAuth.instance.currentUser!.uid)
+                  isEqualTo: FirebaseAuth.instance.currentUser?.uid)
               .orderBy("date", descending: false)
               .snapshots(),
           builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {

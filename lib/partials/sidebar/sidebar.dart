@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 
 import '../../routes/routes.dart';
 import '../model/data_item.dart';
+import '../username.dart';
+
 
 class SidebarScreen extends StatefulWidget {
   const SidebarScreen({Key? key}) : super(key: key);
@@ -46,7 +48,7 @@ class _SidebarScreenState extends State<SidebarScreen> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children:  [
-                          const Text("Sparkles Notes", style: kSideBarUsername),
+                          const GetUsername(),
                           const SizedBox(height: kSmallHeightSpacer),
                           Text('${FirebaseAuth.instance.currentUser!.email}'),
                           const SizedBox(height: 6),

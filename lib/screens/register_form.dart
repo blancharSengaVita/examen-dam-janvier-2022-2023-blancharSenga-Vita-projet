@@ -108,6 +108,7 @@ class _RegisterFormState extends State<RegisterForm> {
 
                             FirebaseFirestore.instance.collection('users').add({
                               'email': _email,
+                              'userID': FirebaseAuth.instance.currentUser!.uid,
                               'username': _userName,
                               'password': _password,
                               //je sais qu'on doit pas enregistre le mdp
