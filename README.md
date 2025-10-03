@@ -18,7 +18,6 @@ Je suis un fervent "noteur", à chaque fois que j'ai des idées ou que je veux m
 
 ### Blanchar Senga-Vita (moi)
 22 ans, étudiant, Liège, Célibataire
-![image](https://user-images.githubusercontent.com/73910195/212951920-2100c90d-a29b-4f53-a240-626e3820e79d.png)
 >  « J'ai besoin de prendre des notes assez rapidement pour ne pas oublier ce que je dois faire ou ne pas perdre de vue certaines idées »
 
 #### Objectif
