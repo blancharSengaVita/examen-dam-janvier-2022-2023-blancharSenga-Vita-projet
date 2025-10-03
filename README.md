@@ -109,7 +109,8 @@ Des choses ont changé entre le design et le développement de l'appli
 ### Supprimer des notes
 
   ![Supprimer des notes 2023-01-17 19_46_30](https://user-images.githubusercontent.com/73910195/212985928-e1f991bb-dba7-44f3-8221-501f9a43ed16.gif)
-
+### Autres
+- recherche des notes avec la barre de recherche
 
 
 
