@@ -13,10 +13,21 @@ class SearchInput extends StatelessWidget {
         padding: const EdgeInsets.symmetric(
           horizontal: kMargin / 2,
         ),
-        child: const TextField(
+        child: TextFormField(
+          cursorColor: Colors.black,
           decoration: InputDecoration(
-            border: OutlineInputBorder(),
-            labelText: 'rechercher une note',
+            prefixIcon: const Icon(Icons.search, color : Colors.black),
+            hintText: "Rechercher Une note",
+            contentPadding:
+                const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
+            enabledBorder: OutlineInputBorder(
+                borderSide: const BorderSide(color: Colors.black, width: 2),
+                borderRadius: BorderRadius.circular(24),
+            ),
+            focusedBorder: OutlineInputBorder(
+                borderSide: const BorderSide(color: Colors.black, width: 2),
+                borderRadius: BorderRadius.circular(24),
+            ),
           ),
         ),
       ),

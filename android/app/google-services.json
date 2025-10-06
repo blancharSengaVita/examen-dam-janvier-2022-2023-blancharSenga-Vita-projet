@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "567884322315",
+    "project_id": "sparkles-note",
+    "storage_bucket": "sparkles-note.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567884322315:android:d15284a4b439bf9523d90e",
+        "android_client_info": {
+          "package_name": "com.example.exame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567884322315-dfit5rjr962u8jrkgbj295mqad88etla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsbPpPVL_kWXKmt_Ey7Cwm2-2IIlXEx_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567884322315-dfit5rjr962u8jrkgbj295mqad88etla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
